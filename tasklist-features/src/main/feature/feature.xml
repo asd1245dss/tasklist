@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.3.0" name="tasklist">
+
+    <feature name="example-tasklist" version="1.0.0-SNAPSHOT">
+        <feature>example-tasklist-persistence</feature>
+        <feature>example-tasklist-ui</feature>
+    </feature>
+    
+    <feature name="example-tasklist-persistence" version="1.0.0-SNAPSHOT">
+        <bundle>mvn:net.lr.tasklist/tasklist-model/1.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:net.lr.tasklist/tasklist-persistence/1.0.0-SNAPSHOT</bundle>
+    </feature>
+
+    <feature name="example-tasklist-ui" version="1.0.0-SNAPSHOT">
+        <feature>http</feature>
+        <feature>http-whiteboard</feature>
+        <bundle>mvn:net.lr.tasklist/tasklist-model/1.0.0-SNAPSHOT</bundle>
+        <bundle>mvn:net.lr.tasklist/tasklist-ui/1.0.0-SNAPSHOT</bundle>
+    </feature>
+   
+</features>
