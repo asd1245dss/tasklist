@@ -13,3 +13,16 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
+.gitignore
+.idea/
+tasklist-features/target/
+tasklist-features/tasklist-features.iml
+tasklist-itests/target/
+tasklist-itests/tasklist-itests.iml
+tasklist-model/target/
+tasklist-model/tasklist-model.iml
+tasklist-persistence/target/
+tasklist-persistence/tasklist-persistence.iml
+tasklist-ui/target/
+tasklist-ui/tasklist-ui.iml
+tasklist.iml
